@@ -1,7 +1,8 @@
-  import React from 'react';
+  import React, { useState } from 'react';
 import logo from "../assets/letter-t.png";
-
+import { BiMenu } from 'react-icons/bi';
 export default function Headers() {
+  const [isOpen, setIconopen] = useState(false);
   return (
     <header data-aos="fade-down" className="sticky top-0 z-50 bg-white shadow-md w-full">
       <nav className="px-6 py-2 flex justify-between items-center">
@@ -11,7 +12,8 @@ export default function Headers() {
             Tanzim's Portfolio
           </div>
         </div>
-        <ul className="flex flex-wrap space-x-6 pr-2 font-semibold text-gray-800">
+        <div>
+        <ul className="flex-wrap space-x-6 pr-2 font-semibold text-gray-800 hidden md:flex">
           <li><a href="#welcome" className="hover:text-amber-300">Home</a></li>
           <li><a href="#projects" className="hover:text-amber-300">Projects</a></li>
           <li><a href="#about" className="hover:text-amber-300">About</a></li>
@@ -25,6 +27,8 @@ export default function Headers() {
             </a>
           </li>
         </ul>
+        <ul className='md:hidden'><li><button className='size-10'><BiMenu></BiMenu></button></li></ul>
+        </div>
       </nav>
     </header>
   );

@@ -117,7 +117,7 @@ export default function Welcome() {
               textShadow: '3px 3px 8px rgba(0,0,0,0.8)',
             }}
           >
-            Web Developer
+            Web Developer || Full stack developer || React Developer
           </p>
           <button className="mt-6 bg-amber-300 hover:bg-black hover:text-amber-300 text-black font-semibold px-5 py-2 rounded-xl shadow-md transition-all">
            <a href="#projects">Projects</a>

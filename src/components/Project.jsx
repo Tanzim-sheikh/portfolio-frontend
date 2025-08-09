@@ -33,9 +33,9 @@ export default function Project() {
 
   return (
     <div id='projects' className="mt-24 px-10">
-      <h1 className="font-bold text-3xl text-gray-800 mb-10" data-aos="fade-down">
-        Featured Projects
-      </h1>
+        <h2 className="flex justify-center text-4xl font-extrabold text-gray-800 mb-10">
+            Featured <span  className="text-amber-300 ml-1">Projects</span>
+          </h2>
 
       <div className="flex justify-center gap-10 flex-wrap">
         {projects.map((proj, index) => (

@@ -72,81 +72,104 @@
 // }
 
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import main from "../assets/welcome.png";
+import logo from "../assets/letter-t.png";
 import modernLit from "../assets/welcomemid.png";
 
 export default function Welcome() {
-  const [showSecond, setShowSecond] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  const images = [main, modernLit];
 
-  const handleThreadPull = () => {
-    setShowSecond(prev => !prev);
-  };
+  // Automatic image changer every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // 5 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   return (
-    <main id="welcome" className="flex justify-center mt-10 relative">
-      <div className="relative h-[450px] w-[900px] rounded-2xl overflow-hidden shadow-2xl">
-
-        {/* Background Image Switcher */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={showSecond ? 'second' : 'first'}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 1 }}
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: `url(${showSecond ? modernLit : main})` }}
-          />
-        </AnimatePresence>
-
-       
-        <div className="absolute inset-0 bg-black/40 z-10 flex flex-col justify-center items-center p-6">
-          <h1
-            className="text-white text-5xl font-extrabold"
-            style={{
-              textShadow: '5px 5px 12px rgba(0,0,0,0.9)',
-            }}
-          >
-            Tanzim Sheikh
-          </h1>
-          <p
-            className="text-white text-lg font-semibold mt-3"
-            style={{
-              textShadow: '3px 3px 8px rgba(0,0,0,0.8)',
-            }}
-          >
-            Web Developer || Full stack developer || React Developer
-          </p>
-          <button className="mt-6 bg-amber-300 hover:bg-black hover:text-amber-300 text-black font-semibold px-5 py-2 rounded-xl shadow-md transition-all">
-           <a href="#projects">Projects</a>
-          </button>
+    <main id="welcome" className="w-full mt-10 relative">
+      {/* Desktop/Large screen */}
+      <div className="hidden sm:flex justify-center">
+        <div className="relative h-[450px] w-[900px] rounded-2xl overflow-hidden shadow-2xl">
+          {/* Automatic Background Image Switcher */}
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentImageIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.5, ease: "easeInOut" }}
+              className="absolute inset-0 bg-cover bg-center"
+              style={{ backgroundImage: `url(${images[currentImageIndex]})` }}
+            />
+          </AnimatePresence>
+          {/* Overlay Text */}
+          <div className="absolute inset-0 bg-black/40 z-10 flex flex-col justify-center items-center p-6">
+            <h1
+              className="text-white text-5xl font-extrabold"
+              style={{
+                textShadow: '5px 5px 12px rgba(0,0,0,0.9)',
+              }}
+            >
+              Tanzim Sheikh
+            </h1>
+            <p
+              className="text-white text-lg font-semibold mt-3"
+              style={{
+                textShadow: '3px 3px 8px rgba(0,0,0,0.8)',
+              }}
+            >
+              Web Developer || Full stack developer || React Developer
+            </p>
+            <button className="mt-6 bg-amber-300 hover:bg-black hover:text-amber-300 text-black font-semibold px-5 py-2 rounded-xl shadow-md transition-all">
+              <a href="#projects">Projects</a>
+            </button>
+          </div>
+          {/* Image Indicator Dots */}
+          <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+            {images.map((_, index) => (
+              <motion.div
+                key={index}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentImageIndex 
+                    ? 'bg-amber-300 scale-110' 
+                    : 'bg-white/50 hover:bg-white/70'
+                }`}
+                whileHover={{ scale: 1.2 }}
+                onClick={() => setCurrentImageIndex(index)}
+                style={{ cursor: 'pointer' }}
+              />
+            ))}
+          </div>
+          {/* Progress Bar */}
+          <div className="absolute bottom-0 left-0 right-0 h-1 bg-black/20 z-20">
+            <motion.div
+              className="h-full bg-amber-300"
+              initial={{ width: "0%" }}
+              animate={{ width: "100%" }}
+              transition={{ 
+                duration: 5, 
+                ease: "linear",
+                repeat: Infinity,
+                repeatType: "loop"
+              }}
+            />
+          </div>
         </div>
-
-        {/* Realistic Thread Button (Pull) */}
-        <div className="absolute top-6 right-[440px] flex flex-col items-center z-30">
-          {/* Thread */}
-          <motion.div
-            animate={{
-              y: [0, 2, 0],
-            }}
-            transition={{
-              repeat: Infinity,
-              duration: 1.5,
-              ease: "easeInOut"
-            }}
-            className="w-[2px] h-24 bg-gray-700"
-          />
-
-          {/* Pull Knob */}
-          <motion.div
-            whileTap={{ y: 15 }}
-            transition={{ type: "spring", stiffness: 300 }}
-            onClick={handleThreadPull}
-            className="w-6 h-6 bg-yellow-400 border-2 border-gray-800 rounded-full shadow-lg cursor-pointer hover:scale-110 transition"
-            title="Pull Thread"
-          />
+      </div>
+      {/* Mobile/Small screen */}
+      <div className="flex sm:hidden justify-center items-center w-full px-4">
+        <div className="w-full max-w-xs bg-white rounded-2xl shadow-xl flex flex-col items-center py-10 px-4 mt-4">
+          <img src={logo} alt="logo" className="w-24 h-24 rounded-full object-cover border-4 border-amber-300 shadow mb-4 bg-white p-2" />
+          <h1 className="text-2xl font-extrabold text-gray-900 mb-2">Tanzim Sheikh</h1>
+          <p className="text-base text-gray-700 font-semibold mb-4 text-center">Web Developer<br/>Full Stack Developer<br/>React Developer</p>
+          <a href="#projects" className="mt-2 bg-amber-300 hover:bg-black hover:text-amber-300 text-black font-semibold px-5 py-2 rounded-xl shadow-md transition-all">Projects</a>
         </div>
       </div>
     </main>

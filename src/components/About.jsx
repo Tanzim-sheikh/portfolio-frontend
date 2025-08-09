@@ -2,13 +2,13 @@ import React from 'react';
 import profile from "../assets/profile.jpg"
 export default function AboutMe() {
   return (
-    <section id="about" className="w-full px-10 py-20 bg-white">
+    <section id="about" className="w-full px-10 py-20 bg-white pt-30">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         
-        {/* 🟨 Image with Overlay */}
+        {/* 🟨 Image with Overlay */}          
         <div data-aos="fade-left" className="w-full md:w-1/2 flex justify-center">
           <div className="relative w-72 h-72 rounded-2xl overflow-hidden group shadow-xl">
-            <img
+            <img                                                                                                                                                                                
               src={profile}
               alt="Tanzim Sheikh"
               className="w-full h-full object-cover group-hover:blur-[2px] transition duration-300"

@@ -81,7 +81,7 @@ import streetSpices from "../assets/project1.png"
 export default function Project() {
   const projects = [
     {
-      img: evenza,
+      img: Evenza,
       title: "Evenza",
       desc: "A Event booking platform with multiple type of users and admin panel functionality built in MERN Technology.",
       tech: ["React", "MongoDB", "Node.js", "Express.js"],

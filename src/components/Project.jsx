@@ -74,7 +74,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
-import Instachat from "../assets/instachat2.png"
 import streetSpices from "../assets/project1.png"
 
 export default function Project() {
@@ -89,7 +88,7 @@ export default function Project() {
       github: "https://github.com/Tanzim-sheikh?tab=repositories"
     },
     {
-      img: Instachat,
+      img: "/instachat2.png",
       title: "Instachat",
       desc: "A modern chat with real-time messaging and group chat application built in MERN stack.",
       tech: ["React", "MongoDB", "Node.js", "Express.js", "Socket.io"],

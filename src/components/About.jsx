@@ -57,10 +57,10 @@ import profile from "../assets/profile.jpg";
 
 export default function AboutMe() {
   const stats = [
-    { icon: FiCode, number: "10+", label: "Projects Completed" },
+    { icon: FiCode, number: "4+", label: "Projects Completed" },
     { icon: FiCoffee, number: "500+", label: "Cups of Coffee" },
-    { icon: FiHeart, number: "2+", label: "Years Experience" },
-    { icon: FiAward, number: "5+", label: "Technologies" }
+    { icon: FiHeart, number: "8+", label: "Months Experience" },
+    { icon: FiAward, number: "4+", label: "Technologies" }
   ];
 
   const containerVariants = {
@@ -136,7 +136,7 @@ export default function AboutMe() {
                   className="absolute -bottom-4 -right-4 bg-amber-300 text-gray-900 px-6 py-3 rounded-xl shadow-lg border border-amber-400"
                 >
                   <div className="text-center">
-                    <div className="font-bold text-lg">2+ Years</div>
+                    <div className="font-bold text-lg">8+ Months</div>
                     <div className="text-sm font-medium">Experience</div>
                   </div>
                 </motion.div>

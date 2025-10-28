@@ -145,19 +145,19 @@ export default function Contact() {
     {
       icon: <FiMapPin className="text-xl" />,
       title: "Location",
-      value: "Barwani, Madhya Pradesh",
+      value: "Indore, Madhya Pradesh",
       color: "text-red-500"
     },
     {
       icon: <FiPhone className="text-xl" />,
       title: "Phone",
-      value: "+91 9876543210",
+      value: "+91 7389752988",
       color: "text-green-500"
     },
     {
       icon: <FiMail className="text-xl" />,
       title: "Email",
-      value: "tanzim@example.com",
+      value: "tanzimsheikh68@gmail.com",
       color: "text-blue-500"
     }
   ];

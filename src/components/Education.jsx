@@ -66,13 +66,13 @@ export default function Education() {
     {
       title: "Bachelor of Computer Science",
       subtitle: "Govt. P.G. College, Barwani",
-      duration: "2021 - Present (3rd Year)",
+      duration: "2023 - Present (3rd Year)",
       icon: <FaUniversity className="text-2xl" />,
     },
     {
       title: "Internship - MERN Stack Developer",
       subtitle: "Developers Point, Barwani",
-      duration: "Currently Doing",
+      duration: "Completed",
       icon: <FaLaptopCode className="text-2xl" />,
     },
   ];
@@ -172,7 +172,7 @@ export default function Education() {
                     />
                   </div>
                   <span className="text-sm text-gray-500 font-medium">
-                    {index === 0 ? "75%" : "Current"}
+                    {index === 0 ? "75%" : "Done"}
                   </span>
                 </div>
               </motion.div>

@@ -555,9 +555,9 @@ export default function Welcome() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-3 sm:gap-4">
                 {[
-                  { number: "10+", label: "Projects" },
-                  { number: "2+", label: "Years" },
-                  { number: "5+", label: "Techs" }
+                  { number: "4+", label: "Projects" },
+                  { number: "8+", label: "Months" },
+                  { number: "4+", label: "Techs" }
                 ].map((stat, index) => (
                   <motion.div
                     key={stat.label}

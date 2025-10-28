@@ -106,13 +106,13 @@ import { SiMongodb, SiExpress, SiTailwindcss } from 'react-icons/si';
 
 const skills = [
   { name: 'HTML', icon: <FaHtml5 className="text-orange-500" />, level: 80 },
-  { name: 'CSS', icon: <FaCss3Alt className="text-blue-500" />, level: 70 },
-  { name: 'JavaScript', icon: <FaJs className="text-yellow-400" />, level: 70 },
-  { name: 'React', icon: <FaReact className="text-cyan-400" />, level: 65 },
+  { name: 'CSS', icon: <FaCss3Alt className="text-blue-500" />, level: 80 },
+  { name: 'JavaScript', icon: <FaJs className="text-yellow-400" />, level: 80 },
+  { name: 'React', icon: <FaReact className="text-cyan-400" />, level: 70 },
   { name: 'Node.js', icon: <FaNodeJs className="text-green-600" />, level: 70 },
-  { name: 'Express.js', icon: <SiExpress className="text-gray-800" />, level: 70 },
+  { name: 'Express.js', icon: <SiExpress className="text-gray-800" />, level: 75 },
   { name: 'MongoDB', icon: <SiMongodb className="text-green-500" />, level: 75 },
-  { name: 'Tailwind', icon: <SiTailwindcss className="text-sky-400" />, level: 80 },
+  { name: 'Tailwind', icon: <SiTailwindcss className="text-sky-400" />, level: 60 },
 ];
 
 const SkillCard = ({ icon, name, level, index }) => {

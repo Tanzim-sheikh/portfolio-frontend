@@ -74,7 +74,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
-import evenza from "../assets/Evenzap.png";
+import Evenza from "../assets/Evenzap.png";
 import Instachat from "../assets/InstaChat2.png"
 import streetSpices from "../assets/project1.png"
 

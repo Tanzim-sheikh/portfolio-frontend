@@ -74,14 +74,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiExternalLink, FiGithub } from 'react-icons/fi';
-import Evenza from "../assets/Evenzap.png";
 import Instachat from "../assets/InstaChat2.png"
 import streetSpices from "../assets/project1.png"
 
 export default function Project() {
   const projects = [
     {
-      img: Evenza,
+      img: "/Evenzap.png",
       title: "Evenza",
       desc: "A Event booking platform with multiple type of users and admin panel functionality built in MERN Technology.",
       tech: ["React", "MongoDB", "Node.js", "Express.js"],

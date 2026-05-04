@@ -88,6 +88,15 @@ export default function Project() {
       github: "https://github.com/Tanzim-sheikh?tab=repositories"
     },
     {
+      img: "/Nike.PNG",
+      title: "Nike Store",
+      desc: "A modern e-commerce website for Nike products with shopping cart and product filtering built in React.",
+      tech: ["React", "Tailwind CSS", "Express.js", "MongoDB"],
+      aos: "fade-up",
+      link: "https://nike-taas.netlify.app",
+      github: "https://github.com/Tanzim-sheikh/Nike-Frontend"
+    },
+    {
       img: "/instachat2.png",
       title: "Instachat",
       desc: "A modern chat with real-time messaging and group chat application built in MERN stack.",

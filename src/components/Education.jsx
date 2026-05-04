@@ -65,8 +65,8 @@ export default function Education() {
   const timeline = [
     {
       title: "Bachelor of Computer Science",
-      subtitle: "Govt. P.G. College, Barwani",
-      duration: "2023 - Present (3rd Year)",
+      subtitle: "Devi Ahilya Vishwavidyalaya, Indore",
+      duration: "2023 - 2026 (completed)",
       icon: <FaUniversity className="text-2xl" />,
     },
     {

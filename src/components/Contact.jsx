@@ -165,13 +165,13 @@ export default function Contact() {
   const socialLinks = [
     {
       icon: <FiGithub className="text-xl" />,
-      href: "#",
+      href: "https://github.com/Tanzim-sheikh",
       label: "GitHub",
       color: "hover:text-gray-900"
     },
     {
       icon: <FiLinkedin className="text-xl" />,
-      href: "#",
+      href: "https://www.linkedin.com/in/tanzim-sheikh-a42159328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       label: "LinkedIn",
       color: "hover:text-blue-600"
     }

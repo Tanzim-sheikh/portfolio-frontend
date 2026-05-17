@@ -38,11 +38,11 @@ export default function Project() {
       github: "https://github.com/Tanzim-sheikh/Flower-Cafe"
     },
     {
-      img: "/instachat2.png",
+      img: "/nexa.PNG",
       title: "Instachat",
       desc: "A modern chat with real-time messaging and group chat application built in MERN stack.",
       tech: ["React", "MongoDB", "Node.js", "Express.js", "Socket.io"],
-      link: "https://instachatapp.netlify.app",
+      link: "https://nexa-chats.netlify.app",
       github: "https://github.com/Tanzim-sheikh/InstagramFrontend"
     },
     {

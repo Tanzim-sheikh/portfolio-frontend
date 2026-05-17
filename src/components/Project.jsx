@@ -22,20 +22,20 @@ export default function Project() {
       github: "https://github.com/Tanzim-sheikh/Nike-Frontend"
     },
     {
-      img: "/Capture.PNG",
-      title: "The Growth",
-      desc: "A modern GSAP scrollable website with responsive design and smooth animations built in React.",
-      tech: ["React", "Tailwind CSS", "Framer Motion", "GSAP"],
-      link: "https://thegrowth2.netlify.app",
-      github: "https://github.com/Tanzim-sheikh/The-Growth"
-    },
-    {
       img: "/nexa.PNG",
       title: "Nexa Chat",
       desc: "A modern chat with real-time messaging and group chat application built in MERN stack.",
       tech: ["React", "MongoDB", "Node.js", "Express.js", "Socket.io"],
       link: "https://nexa-chats.netlify.app",
       github: "https://github.com/Tanzim-sheikh/InstagramFrontend"
+    },
+     {
+      img: "/Capture.PNG",
+      title: "The Growth",
+      desc: "A modern GSAP scrollable website with responsive design and smooth animations built in React.",
+      tech: ["React", "Tailwind CSS", "Framer Motion", "GSAP"],
+      link: "https://thegrowth2.netlify.app",
+      github: "https://github.com/Tanzim-sheikh/The-Growth"
     },
     {
       img: "/PetalPour.PNG",

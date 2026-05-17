@@ -11,12 +11,12 @@ export default function Project() {
       desc: "A Event booking platform with multiple type of users and admin panel functionality built in MERN Technology.",
       tech: ["React", "MongoDB", "Node.js", "Express.js"],
       link: "https://evenzap.netlify.app",
-      github: "https://github.com/Tanzim-sheikh?tab=repositories"
+      github: "https://github.com/Tanzim-sheikh/EventPro-Frontend"
     },
     {
       img: "/Nike.PNG",
       title: "Nike Store",
-      desc: "A modern e-commerce website for Nike products with shopping cart and product filtering built in React.",
+      desc: "A Shoe e-commerce website for Nike products with shopping cart and product filtering built in React.",
       tech: ["React", "Tailwind CSS", "Express.js", "MongoDB"],
       link: "https://nike-taas.netlify.app",
       github: "https://github.com/Tanzim-sheikh/Nike-Frontend"
@@ -27,7 +27,15 @@ export default function Project() {
       desc: "A modern GSAP scrollable website with responsive design and smooth animations built in React.",
       tech: ["React", "Tailwind CSS", "Framer Motion", "GSAP"],
       link: "https://thegrowth2.netlify.app",
-      github: "https://github.com/Tanzim-sheikh?tab=repositories"
+      github: "https://github.com/Tanzim-sheikh/The-Growth"
+    },
+    {
+      img: "/PetalPour.PNG",
+      title: "Petal Pour Cafe",
+      desc: "Cafe Landing page built with React and Tailwind CSS.",
+      tech: ["React", "Tailwind CSS", ],
+      link: "https://petal-pour.netlify.app",
+      github: "https://github.com/Tanzim-sheikh/Flower-Cafe"
     },
     {
       img: "/instachat2.png",
@@ -35,7 +43,7 @@ export default function Project() {
       desc: "A modern chat with real-time messaging and group chat application built in MERN stack.",
       tech: ["React", "MongoDB", "Node.js", "Express.js", "Socket.io"],
       link: "https://instachatapp.netlify.app",
-      github: "https://github.com/Tanzim-sheikh?tab=repositories"
+      github: "https://github.com/Tanzim-sheikh/InstagramFrontend"
     },
     {
       img: streetSpices,

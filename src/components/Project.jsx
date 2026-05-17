@@ -30,20 +30,20 @@ export default function Project() {
       github: "https://github.com/Tanzim-sheikh/The-Growth"
     },
     {
+      img: "/nexa.PNG",
+      title: "Nexa Chat",
+      desc: "A modern chat with real-time messaging and group chat application built in MERN stack.",
+      tech: ["React", "MongoDB", "Node.js", "Express.js", "Socket.io"],
+      link: "https://nexa-chats.netlify.app",
+      github: "https://github.com/Tanzim-sheikh/InstagramFrontend"
+    },
+    {
       img: "/PetalPour.PNG",
       title: "Petal Pour Cafe",
       desc: "Cafe Landing page built with React and Tailwind CSS.",
       tech: ["React", "Tailwind CSS", ],
       link: "https://petal-pour.netlify.app",
       github: "https://github.com/Tanzim-sheikh/Flower-Cafe"
-    },
-    {
-      img: "/nexa.PNG",
-      title: "Instachat",
-      desc: "A modern chat with real-time messaging and group chat application built in MERN stack.",
-      tech: ["React", "MongoDB", "Node.js", "Express.js", "Socket.io"],
-      link: "https://nexa-chats.netlify.app",
-      github: "https://github.com/Tanzim-sheikh/InstagramFrontend"
     },
     {
       img: streetSpices,
